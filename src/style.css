@@ -75,7 +75,7 @@ h3 {
   margin: 30px auto;
 }
 footer {
-  font-size: smaller;
+  font-size: 10px;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -110,7 +110,7 @@ a:hover {
   text-decoration: none;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.65;
+  opacity: 0.68;
 }
 
 .weather-forecast-temperatures {
