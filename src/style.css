@@ -1,0 +1,106 @@
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(44, 49, 93);
+}
+.search {
+  display: block;
+  margin: 0 auto;
+  top: 10px;
+  right: 0px;
+}
+.text-center {
+  display: block;
+  margin: 0 auto;
+}
+.card-body {
+  position: relative;
+  padding-top: 5px;
+  width: 100%;
+}
+.icon {
+  font-size: 50px;
+  color: rgb(44, 49, 93);
+}
+.today {
+  font-size: 90px;
+  position: relative;
+  top: -180px;
+  right: -300px;
+}
+
+.icon.today {
+  top: -190px;
+  right: -300px;
+}
+.today-temp {
+  font-size: 30px;
+  position: relative;
+  top: -90px;
+  right: -160px;
+}
+.temp-cold {
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+  top: -90px;
+  right: -160px;
+}
+#search {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.curr-loc {
+  font-size: 10px;
+  font-weight: bolder;
+}
+.col-10 {
+  position: relative;
+  top: 70px;
+}
+.row-cols-6 {
+  padding: 5px;
+  background: rgb(237, 238, 245);
+  border-radius: 10px;
+}
+
+.app-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+}
+footer {
+  font-size: smaller;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+#temper {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+#conversion {
+  font-size: 18px;
+  position: relative;
+  top: -45px;
+}
+
+#description {
+  text-transform: capitalize;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
