@@ -50,6 +50,7 @@ h3 {
   position: absolute;
   top: 20px;
   right: 0;
+  font-size: 15px;
 }
 .curr-loc {
   font-size: 10px;
@@ -59,17 +60,18 @@ h3 {
   position: relative;
   top: 50px;
 }
-.col-2 {
+#forecast {
   padding: 5px;
   background: rgb(237, 238, 245);
   border-radius: 10px;
 }
+
 .row-cols-2 {
   margin-bottom: -100px;
 }
 
 .app-wrapper {
-  max-width: 800px;
+  max-width: 700px;
   margin: 30px auto;
 }
 footer {
