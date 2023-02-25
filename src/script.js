@@ -22,7 +22,7 @@ if (currentMinutes < 10) {
 let dayChange = document.querySelector("#today");
 dayChange.innerHTML = `Today | ${currentDay} ${currentHour}:${currentMinutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
