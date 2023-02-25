@@ -51,7 +51,12 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-//Week5
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "5ef4de8cd6b7fefcd7c42f98cf464ce8";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&unit=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function searchDefaultCity(city) {
   let apiKey = "0f955f248c77e13bb6a45d6e840419ee";
@@ -85,6 +90,8 @@ function newWeather(response) {
       "src",
       `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+
+  getForecast(response.data.coord);
 }
 
 function searchLocation(position) {
@@ -128,4 +135,3 @@ let degreesC = document.querySelector("#celsius");
 degreesC.addEventListener("click", showCelsius);
 
 searchDefaultCity("London");
-displayForecast();
