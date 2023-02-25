@@ -124,29 +124,4 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#curr-loc-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-function showFarenheit(event) {
-  event.preventDefault();
-  let Farenheit = document.querySelector("#temper");
-  let farenheitTemp = (celsiusTemperature * 9) / 5 + 32;
-  Farenheit.innerHTML = Math.round(farenheitTemp);
-  degreesC.classList.remove("active");
-  degreesF.classList.add("active");
-}
-
-let degreesF = document.querySelector("#farenheit");
-degreesF.addEventListener("click", showFarenheit);
-
-let celsiusTemperature = null;
-
-function showCelsius(event) {
-  event.preventDefault();
-  let Celsius = document.querySelector("#temper");
-  Celsius.innerHTML = Math.round(celsiusTemperature);
-  degreesF.classList.remove("active");
-  degreesC.classList.add("active");
-}
-
-let degreesC = document.querySelector("#celsius");
-degreesC.addEventListener("click", showCelsius);
-
 searchDefaultCity("London");
